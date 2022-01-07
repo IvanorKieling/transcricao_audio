@@ -1,0 +1,59 @@
+@charset  "utf-8";
+
+.hidden{
+    display: none;
+}
+body {
+    background: #ffffef;
+    font-family: arial, sans-serif;
+}
+header{
+    box-shadow: 3px 3px 5px #777;
+    background-image: linear-gradient(to right,#ffffef, rgb(250, 245, 224), #ffffef);
+}
+
+#base {
+    box-sizing: border-box;
+    min-height: 500px;
+    
+    padding: 0 20px;
+    box-shadow: 3px 3px 5px #777;
+    border-radius: 5px;
+    background: rgb(250, 245, 224) !important;
+}
+
+#mic{
+    position: absolute;
+    right: 0;
+    height: 42px;
+    width: 42px;
+    background: #777;
+    border-radius: 50%;
+    z-index: 1;
+}
+#mic:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    background: url('../images/micro.svg') no-repeat center;
+    border-radius: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%);    
+}
+#mic:hover{
+    box-shadow: 0px 0px 5px 2px rgba(161, 54, 54, 0.7) !important;
+    background: #555;
+}
+#mic:enabled{
+    background-color: crimson;
+}
+#ajuda{
+    background: #777;
+    color: white;
+}
+#ajuda:hover{
+    background:#555;
+}
